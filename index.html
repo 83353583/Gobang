@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>五子棋</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div class="control">
+    <h1>添加了智障AI的五子棋</h1>
+    <input type="button" value="开始游戏" id="start">
+    <div class="mode">
+        <h1>选择模式</h1>
+        <div>双人对战<input type="radio" name="mode" checked id="PVP"></div>
+        <div>人机模式<input type="radio" name="mode" id="AI"></div>
+    </div>
+</div>
+<div class="container">
+    <canvas width="620" height="620"></canvas>
+</div>
+<div class="over">
+    <div class="win">
+        <span></span>
+        <input type="button" value="重新开始" id="restart">
+    </div>
+
+</div>
+</body>
+<script src="js/index.js"></script>
+</html>
