@@ -13,6 +13,21 @@ let blank={};
 let AI=false;
 let AIMode=document.querySelector("#AI");
 let PVPMode=document.querySelector("#PVP");
+let music=document.querySelector("#music");
+let audio=document.querySelector("audio");
+let musicR=true;
+music.onclick=function(){
+    if (musicR){
+        audio.pause();
+        music.style.animationPlayState="paused";
+        musicR=false;
+    }else{
+        audio.play();
+        music.style.animationPlayState="running";
+        musicR=true;
+    }
+
+}
 AIMode.onfocus=function(){
     AI=true;
 };
